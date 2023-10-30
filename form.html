@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Photography Contest Registration</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        *{
+            margin: 0;
+
+        }
+
+
+        h2 {
+            color: #999;
+        }
+
+        form {
+            background-color: #fff;
+            width: 80%;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            text-align: left;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+            color: #333;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="file"],
+        select,
+        textarea {
+            width: 94%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        input[type="checkbox"] {
+            margin-top: 10px;
+        }
+
+        input[type="submit"] {
+            background-color:   rgb(192, 0, 0);
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 3px;
+            cursor: pointer;
+            margin-top: 15px;
+            font-family: 'Norwester';
+
+        }
+
+        input[type="submit"]:hover {
+            background-color:   rgb(88, 4, 4);
+
+        }
+
+
+    </style>
+</head>
+<body>
+
+        <form action="registration_process.php" method="post" enctype="multipart/form-data">
+            <h2 align="center">Photography Contest Registration</h2> <br><br>
+
+            <label for="full_name">Full Name:</label>
+            <input type="text" name="full_name" id="full_name" required><br>
+        
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required><br>
+        
+            <label for="phone">Phone Number:</label>
+            <input type="tel" name="phone" id="phone" required><br>
+        
+            <label for="photo_title">Photo Title:</label>
+            <input type="text" name="photo_title" id="photo_title" required><br>
+
+            <label for="photo_upload">Upload Your Photo:</label>
+            <input type="file" name="photo_upload" id="photo_upload" accept="image/*" required><br>
+        
+
+        
+            <label for="agree_terms">
+                <input type="checkbox" name="agree_terms" id="agree_terms" required>
+                I agree to the contest terms and conditions
+            </label><br>
+        
+            <label for="qr_code">QR Code Picture:</label>
+            <img  width="150px" src="./images/qr.png" alt="">
+        
+            <label for="transaction_id">Transaction ID:</label>
+            <input type="text" name="transaction_id" id="transaction_id" required><br>
+        
+            <label for="transaction_ssn">Transaction image:</label>
+            <input type="file" name="transaction_ssn" id="transaction_ssn" required><br>
+        
+            <input  type="submit" value="Register">
+        </form>
+        
+        <footer>
+            <div class="footer-content">
+                <div class="footer-credits">
+                    <p>&copy; 2023 GLUG PACE. All Rights Reserved.</p>
+                    <p>Credits to GLUG PACE 2023</p>
+                </div>
+                <div class="footer-contact">
+                    <p>Contact Us:</p>
+                    <p>Phone: +91 6361 557 581</p>
+                    <p>Email: <a href="mailto:glug@pace.edu.in">glug@pace.edu.in</a></p>
+                </div>
+            </div>
+        </footer>
+    
+</body>
+</html>

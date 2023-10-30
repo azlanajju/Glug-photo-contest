@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+@font-face {
+    font-family: 'Breathing';
+    src: url('./fonts/Breathing.ttf');
+}
+
+@font-face {
+    font-family: 'Norwester';
+    src: url('./fonts/norwester.otf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100vw;
+    overflow-x: hidden;
+    font-family: 'Norwester';
+    background: url('./images/backg.png');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+
+
+
+}
+
+.home {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.title {
+    text-align: center;
+}
+
+.title h1 {
+    font-family: 'Norwester';
+    color: white;
+    font-size: 100px;
+    -webkit-text-stroke: 3px #000000;
+
+
+}
+
+.title p {
+    font-family: 'Breathing';
+    color: white;
+    font-size: 60px;
+    margin-top: -50px;
+    -webkit-text-stroke: 0.1px #000;
+
+}
+
+.date img {
+    position: absolute;
+    bottom: 0;
+    height: 100px;
+    left: 20px;
+}
+
+.collegeLogo img {
+    position: absolute;
+    top: 0;
+    left: 20px;
+    height: 100px;
+}
+
+.glugLogo img {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    height: 80px;
+}
+
+
+
+
+/* chevron button animation  */
+.chevronBtn {
+    display: flex;
+    position: absolute;
+    bottom: 100px;
+    margin: auto;
+    left: 46%;
+}
+
+.chevron {
+    position: absolute;
+    width: 108px;
+    height: 8px;
+    opacity: 0;
+    transform: scale3d(0.5, 0.5, 0.5);
+    animation: move 3s ease-out infinite;
+}
+
+.chevron:first-child {
+    animation: move 3s ease-out 1s infinite;
+}
+
+.chevron:nth-child(2) {
+    animation: move 3s ease-out 2s infinite;
+}
+
+.chevron:before,
+.chevron:after {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 51%;
+    background: #4285F4;
+    animation: colorChange 3s linear infinite;
+}
+
+.chevron:before {
+    left: 0;
+    transform: skew(0deg, 30deg);
+}
+
+.chevron:after {
+    right: 0;
+    width: 50%;
+    transform: skew(0deg, -30deg);
+}
+
+@keyframes move {
+    25% {
+        opacity: 1;
+
+    }
+
+    33% {
+        opacity: 1;
+        transform: translateY(30px);
+
+    }
+
+    67% {
+        opacity: 1;
+        transform: translateY(40px);
+
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
+    }
+}
+
+@keyframes colorChange {
+    0% {
+        background: #333;
+
+    }
+
+    33.3% {
+        background: #fff;
+    }
+
+    66.6% {
+        background: #999;
+    }
+
+    100% {
+        background: #f2f2f2;
+
+    }
+
+}
+
+@keyframes pulse {
+    to {
+        opacity: 1;
+    }
+}
+
+.details{
+    background:transparent;
+    
+}
+.container {
+    background: #ffffffcc;
+    height: auto;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 70vw;
+}
+
+.header {
+    color: #333;
+    font-size: 35px;
+}
+
+.intro {
+    color: #666;
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.rules {
+    list-style-type: bullets;
+    width: 96%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: 100;
+}
+.rule{
+    width: 850px;
+}
+.rule-item {
+    margin: 15px 15px;
+    text-align: left;
+}
+
+.rule-item h1 {
+    font-size: 20px;
+}
+.rule-item p span{
+    color: rgb(192, 0, 0);
+}
+
+.rule-item p {
+    font-size: 16px;
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.submit-button {
+    font-family: 'Norwester';
+
+    background-color: rgb(192, 0, 0);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 15px;
+    font-size: 25px;
+}
+
+.submit-button:hover {
+    background-color:   rgb(99, 3, 3);
+    ;
+}
+
+/* Footer styling */
+footer {
+    background-color: rgb(192, 0, 0);
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-credits {
+    text-align: left;
+}
+
+.footer-contact {
+    text-align: right;
+}
+
+.footer-credits p, .footer-contact p {
+    margin: 5px 0;
+}
+
+.footer-contact a {
+    color: #fff;
+    text-decoration: none;
+}

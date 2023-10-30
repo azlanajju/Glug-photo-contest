@@ -1,0 +1,52 @@
+@media (max-width:780px) {
+    .collegeLogo img{
+        height: 60px;
+        left: 0;
+    }
+    .glugLogo img{
+        height: 50px;
+        right: 0;
+    }
+    .title h1{
+        font-size:60px;
+    }
+    .title p{
+        font-size: 40px;
+        margin-top:-30px;
+    }
+    .date img{
+        height: 50px;
+        left: 5px;
+    }
+    .chevron{
+        width: 48px;
+    }
+    .chevronBtn{
+        bottom: 200px;
+    }
+    .container{
+        width: 83vw;
+    }
+    .header{
+        font-size: 25px;
+    }
+    .intro{
+        font-size: 15px;
+    }
+    .rules{
+        width: 100%;
+    }
+    .rule{
+        width: auto;
+    }
+    .rule-item h1{
+        font-size: 16px;
+    }
+    .rule-item p{
+        text-align: justify;
+        font-size: 13px;
+    }
+    .footer-credits p, .footer-contact p {
+        font-size: 10px;
+    }
+}
