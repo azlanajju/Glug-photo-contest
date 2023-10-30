@@ -49,4 +49,8 @@
     .footer-credits p, .footer-contact p {
         font-size: 10px;
     }
+    form{
+        max-width: 85vw;
+    }
+
 }
