@@ -9,7 +9,13 @@
     font-family: 'Norwester';
     src: url('./fonts/norwester.otf');
 }
-
+::-webkit-scrollbar{
+    width: 5px;
+    background: lavender;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(192, 0, 0);
+}
 * {
     margin: 0;
     padding: 0;

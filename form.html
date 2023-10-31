@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 
     <meta charset="UTF-8">
@@ -7,7 +8,7 @@
     <title>Photography Contest Registration</title>
     <link rel="stylesheet" href="./style.css">
     <style>
-        *{
+        * {
             margin: 0;
 
         }
@@ -52,7 +53,7 @@
         }
 
         input[type="submit"] {
-            background-color:   rgb(192, 0, 0);
+            background-color: rgb(192, 0, 0);
             color: #fff;
             border: none;
             padding: 10px 20px;
@@ -64,70 +65,80 @@
         }
 
         input[type="submit"]:hover {
-            background-color:   rgb(88, 4, 4);
+            background-color: rgb(88, 4, 4);
 
         }
-@media (max-width:780) {
-    
-}
 
+        @media (max-width:780) {}
     </style>
-        <link rel="stylesheet" href="./responsive.css">
+    <link rel="stylesheet" href="./responsive.css">
 
 
 </head>
+
 <body>
 
-        <form action="registration_process.php" method="post" enctype="multipart/form-data">
-            <h2 align="center">Photography Contest Registration</h2> <br><br>
+    <form action="registration_process.php" method="post" enctype="multipart/form-data">
+        <h2 align="center">Photography Contest Registration</h2> <br><br>
 
-            <label for="full_name">Full Name:</label>
-            <input type="text" name="full_name" id="full_name" required><br>
-        
-            <label for="email">Email:</label>
-            <input type="email" name="email" id="email" required><br>
-        
-            <label for="phone">Phone Number:</label>
-            <input type="tel" name="phone" id="phone" required><br>
-        
-            <label for="photo_title">Photo Title:</label>
-            <input type="text" name="photo_title" id="photo_title" required><br>
+        <label for="full_name">Full Name:</label>
+        <input type="text" name="full_name" id="full_name" required><br>
 
-            <label for="photo_upload">Upload Your Photo:</label>
-            <input type="file" name="photo_upload" id="photo_upload" accept="image/*" required><br>
-        
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required><br>
 
-        
-            <label for="agree_terms">
-                <input type="checkbox" name="agree_terms" id="agree_terms" required>
-                I agree to the contest terms and conditions
-            </label><br>
-        
-            <label for="qr_code">QR Code Picture:</label>
-            <img  width="150px" src="./images/qr.png" alt="">
-        
-            <label for="transaction_id">Transaction ID:</label>
-            <input type="text" name="transaction_id" id="transaction_id" required><br>
-        
-            <label for="transaction_ssn">Transaction image:</label>
-            <input type="file" name="transaction_ssn" id="transaction_ssn" required><br>
-        
-            <input  type="submit" value="Register">
-        </form>
-        
-        <footer>
-            <div class="footer-content">
-                <div class="footer-credits">
-                    <p>&copy; 2023 GLUG PACE. All Rights Reserved.</p>
-                    <p>Credits to GLUG PACE 2023</p>
-                </div>
-                <div class="footer-contact">
-                    <p>Contact Us:</p>
-                    <p>Phone: +91 6361 557 581</p>
-                    <p>Email: <a href="mailto:glug@pace.edu.in">glug@pace.edu.in</a></p>
-                </div>
+        <label for="phone">Phone Number:</label>
+        <input type="tel" name="phone" id="phone" required><br>
+        <label for="college">Select Your College:</label>
+        <select id="college" name="college">
+            <option value="PACE">PACE</option>
+            <option value="PACP">PACP</option>
+            <option value="PAFGC">PAFGC</option>
+            <option value="PACPhysiotherapy">PAC Physiotherapy</option>
+            <option value="MBA">MBA</option>
+
+        </select> <br>
+
+        <label for="photo_title">Photo Title:</label>
+        <input type="text" name="photo_title" id="photo_title" required><br>
+
+        <label for="photo_upload">Upload Your Photo:</label>
+        <input type="file" name="photo_upload" id="photo_upload" accept="image/*" required><br>
+
+
+
+        <label for="agree_terms">
+            <input type="checkbox" name="agree_terms" id="agree_terms" required>
+            I agree to the contest terms and conditions
+        </label><br>
+
+        <label for="qr_code">QR Code Picture:</label>
+        <img width="150px" src="./images/qr.png" alt="">
+
+        <label for="transaction_id">Transaction ID:</label>
+        <input type="text" name="transaction_id" id="transaction_id" required><br>
+
+        <label for="transaction_ssn">Transaction image:</label>
+        <input type="file" name="transaction_ssn" id="transaction_ssn" required><br>
+
+        <input type="submit" value="Register">
+    </form>
+    <div style="height: 100px;"></div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-credits">
+                <p>&copy; 2023 GLUG PACE. All Rights Reserved.</p>
+                <p>Credits to GLUG PACE 2023</p>
             </div>
-        </footer>
-    
+            <div class="footer-contact">
+                <p>Contact Us:</p>
+                <p>Phone: +91 6361 557 581</p>
+                <p>Email: <a href="mailto:glug@pace.edu.in">glug@pace.edu.in</a></p>
+            </div>
+        </div>
+    </footer>
+
 </body>
+
 </html>
